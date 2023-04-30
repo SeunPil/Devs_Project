@@ -1,0 +1,106 @@
+/* 공용 CSS */
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 헤더 */
+
+.header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+}
+
+.header_box{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    /* background-color: pink; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item_box {
+    display: flex;
+    /* background: black; */
+    width: 70%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_box {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    background: blue;
+}
+
+.item {
+    display: flex;
+    width: 40%;
+    height: 100%;
+/* background: purple; */
+    justify-content: space-around;
+    align-items: center;
+    font-family: "MICEGothic Bold";
+}
+
+/* section main-1 */
+
+.main_1{
+/* background: black; */
+width: 100%;
+height: 750px;
+}
+
+/* Animation */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+
+#main_1_div {
+text-align: center;
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#main_1_div > h3 {
+    font-size: 30px;
+    color: gray;
+    font-family: 'MICEGothic Bold';
+    margin-bottom: 5px;
+}
+
+#main_1_div > h2 {
+  margin-top: 0;
+  font-size: 50px;
+  color: black;
+  font-family: 'MICEGothic Bold';
+  margin-bottom: 10px;
+}

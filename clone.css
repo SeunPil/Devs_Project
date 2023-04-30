@@ -1,0 +1,720 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.span_1 {
+    margin-left: 15px;
+    color: gray;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    box-shadow: 2px 2px 2px 2px gray;
+
+}
+
+.menu_box {
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    height: 100%;
+}
+
+.menu .text {
+    color: black;
+    /* font-size: 1.1em;     */
+    font-weight: bold;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    /* background: yellow; */
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* 상단 박스 위 태그 <Information /> */
+.info_tag {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 208px;
+    top: 100px;
+}
+
+/* Contect */
+.info_tag2 {
+
+    width: 140px;
+    height: 30px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 920px;
+    top: 520px;
+}
+
+
+
+/* typing Animation */
+@keyframes typing {
+
+    /* 시작할 때 w는 0으로 시작 */
+    from {
+        width: 0
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+.info_content {
+    width: 1500px;
+    height: 600px;
+    border: 3px solid rgb(64, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+
+}
+
+.info_content2 {
+    width: 1500px;
+    height: 600px;
+    border: 3px solid rgb(64, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+    overflow: hidden;
+
+}
+
+
+.info_content .info_ani {
+    color: black;
+    width: 37ch;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2px;
+    /* 3초동안 37개의 글자를 표시한다. */
+    animation: typing 6s steps(37) infinite;
+}
+
+
+
+.info_me {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    /* background: black; */
+}
+
+/* 사진박스 */
+
+.information .info_content .img_box {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(64, 172, 172);
+    box-shadow: 4px 4px 1px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+
+}
+
+.icon i:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+
+/* Section 2  */
+
+
+.info_tag3 {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 208px;
+    top: 1020px;
+}
+
+
+.map .map_box {
+    /* background: black; */
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon_box_2 i {
+    color: white;
+}
+
+.icon_box_2 {
+    width: 1100px;
+    height: 550px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* background: yellow; */
+}
+
+
+.icon_box_2 .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0288d1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.icon_box_2 .text_box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+    background: white;
+}
+
+.icon_text_2 {
+    /* background: yellow; */
+    display: flex;
+}
+
+.icon_list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 150px;
+    height: 500px;
+    z-index: 3;
+
+
+    /* background: black; */
+}
+
+.textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    height: 500px;
+
+}
+
+.textlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+
+
+    /* background: black; */
+}
+
+
+@keyframes shake {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    12.5% {
+        transform: rotateX(-45deg);
+    }
+
+    25% {
+        transform: rotateX(45deg);
+    }
+
+    37.5% {
+        transform: rotateX(-45deg);
+    }
+
+    50% {
+        transform: rotateX(45deg);
+    }
+
+    62.5% {
+        transform: rotateX(-45deg);
+    }
+
+    75% {
+        transform: rotateX(45deg);
+    }
+
+    87.5% {
+        transform: rotateX(-45deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+
+.textlist .textarea {
+
+
+    box-shadow: 4px 4px 4px 4px;
+    background: white;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    line-height: 10px;
+}
+
+
+#num0 {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+#num1 {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+}
+
+#num2 {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+}
+
+#num3 {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-delay: 1.8s;
+}
+
+.textlist h4,
+h5 {
+
+    margin-left: 15px;
+    height: 100%;
+}
+
+.line {
+    position: absolute;
+    width: 5px;
+    height: 390px;
+    background: gray;
+    opacity: 0.3;
+    left: 558px;
+    z-index: -2;
+}
+
+
+
+.item:nth-child(2) {
+    background-color: #dcf0fb;
+}
+
+
+
+
+/* Section Skill */
+
+.info_tag4 {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 208px;
+    top: 1940px;
+}
+
+
+.textbox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    height: 500px;
+    /* background: black; */
+
+}
+
+.graph {
+    color: black;
+    background: gray;
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.graph span {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    width: 75%;
+    /* background: pink; */
+    border-radius: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: #fff;
+
+
+}
+
+#graph0 span {
+    background: orangered;
+
+    animation: graph0 1 3s;
+}
+
+#graph1 span {
+    background: rgba(255, 229, 124);
+
+    animation: graph1 1 3s;
+}
+
+#graph2 span {
+    background: #0288d1;
+
+    animation: graph2 1 1.5s;
+}
+
+#graph3 span {
+    background: black;
+
+    animation: graph3 1 3s;
+}
+
+.graph p {
+    display: block;
+    position: absolute;
+    line-height: 5px;
+}
+
+@keyframes graph0 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 40%;
+        opacity: 1;
+    }
+}
+
+@keyframes graph1 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 45%;
+        opacity: 1;
+    }
+}
+
+@keyframes graph2 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 25%;
+        opacity: 1;
+    }
+}
+
+@keyframes graph3 {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 65%;
+        opacity: 1;
+    }
+}
+
+.item:nth-child(3) {
+    background: white;
+}
+
+/* PortFolio */
+
+
+.icon_box_3 {
+    position: relative;
+    width: 80%;
+    height: 550px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    /* background: yellow; */
+}
+
+
+.Box h4 {
+    color: #0288d1;
+}
+
+.Box {
+    box-shadow: 3px 3px 3px 3px gray;
+    background: #ffff;
+    width: 25%;
+    height: 500px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    perspective: 1000px;
+}
+
+.flip {
+    /* background: black; */
+    width: 100%;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: 1.2s;
+
+}
+
+.front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+
+.back p {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.back a {
+    position: relative;
+    left: 40px;
+}
+
+
+
+.Box:hover .flip {
+    transform: rotateY(-180deg);
+}
+
+
+.ImgBox {
+    background: white;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.info_tag5 {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 208px;
+    top: 2865px;
+}
+
+/* End Portfolio */
+
+
+
+.info_tag6 {
+
+    width: 220px;
+    height: 45px;
+    background: #dcf0fb;
+    border-radius: 5px;
+    border: 3px solid rgb(64, 172, 172);
+
+    color: #0288d1;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+
+    position: absolute;
+    float: left;
+    left: 300px;
+    top: 3900px;
+}
+
+@keyframes uprising {
+    0% {
+        top: 60%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+
+    }
+}
+
+.footer_box {
+    position: absolute;
+    left: 350px;
+    /* background: black; */
+}
+
+
+.footer p {
+    line-height: 30px;
+    color: gray;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.item:nth-child(4) {
+    background: #dcf0fb;
+}
