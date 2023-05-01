@@ -21,10 +21,12 @@ a {
 
 /* 헤더 */
 
-.header {
+header {
     width: 100%;
     height: 60px;
-    position: sticky;
+    position:fixed;
+    top: 0;
+    background: white;
 }
 
 .header_box{
@@ -61,46 +63,4 @@ a {
     justify-content: space-around;
     align-items: center;
     font-family: "MICEGothic Bold";
-}
-
-/* section main-1 */
-
-.main_1{
-/* background: black; */
-width: 100%;
-height: 750px;
-}
-
-/* Animation */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-
-
-#main_1_div {
-text-align: center;
-  color:#999;
-  text-transform: uppercase;
-  font-size:36px;
-  font-weight:bold;
-  padding-top:200px;  
-  position:fixed;
-  width:100%;
-  bottom:45%;
-  display:block;
-}
-
-#main_1_div > h3 {
-    font-size: 30px;
-    color: gray;
-    font-family: 'MICEGothic Bold';
-    margin-bottom: 5px;
-}
-
-#main_1_div > h2 {
-  margin-top: 0;
-  font-size: 50px;
-  color: black;
-  font-family: 'MICEGothic Bold';
-  margin-bottom: 10px;
 }
